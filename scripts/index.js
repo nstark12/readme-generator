@@ -1,9 +1,9 @@
 // Include packages needed for this application
 import fs from 'fs'
 import inquirer from 'inquirer'
-import { getMarkdown } from './generateMarkdown'
+import { getMarkdown } from './generateMarkdown.js'
 
-// TODO: Create an array of questions for user input
+// Questions for user input
 const questions = () => {
     return inquirer.prompt([
         {
@@ -60,12 +60,20 @@ const questions = () => {
         }
 
     ])
+        .then(answers => {
+            const markdown = getMarkdown(answers)
+            fs.writeFile(`../readme-files/${answers.title}.md`, markdown, err => {
+                if (err) {
+                    throw err
+                }
+
+                console.log(`${answers.title}.md saved!`)
+            })
+        })
+        .catch(error => console.log(error))
 }
 
 questions();
-
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
 function init() {}
