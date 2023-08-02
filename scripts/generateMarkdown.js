@@ -1,21 +1,21 @@
-// function to build table of contents
-const buildTableOfContents = contents => contents
-    .map(string => 
-      `
-[${string}](#${string})
-      `)
-    .join('')
-
 // destructuring and function to create a markdown file 
-export const getMarkdown = ({title, description, tableOfContents, installation, usage, license, contributing, tests, githubUsername, email}) => {
+export const getMarkdown = ({title, description, installation, usage, license, contributing, tests, githubUsername, email}) => {
 
   return `
 # ${title}
+![Github licence](https://img.shields.io/badge/license-${license}-blue.svg)
 
 ${description}
 
 ## Table of Contents
-${buildTableOfContents(tableOfContents)}
+
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
+
 
 ## Installation
 
@@ -27,7 +27,7 @@ ${usage}
 
 ## License
 
-${license}
+This project is licensed under ${license}
 
 ## Contributing
 
@@ -38,6 +38,8 @@ ${contributing}
 ${tests}
 
 ## Questions
+
+Reach me with additional questions:
 
   * GitHub Username: ${githubUsername}
   * Email Address: ${email}

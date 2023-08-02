@@ -17,12 +17,6 @@ const questions = () => {
             message: 'What is the project description?'
         },
         {
-            type: 'checkbox',
-            name: 'tableOfContents',
-            message: 'Which sections are included in this project\'s README?',
-            choices: ['installation', 'usage', 'license', 'contributing', 'tests', 'questions']
-        },
-        {
             type: 'input', 
             name: 'installation',
             message: 'What are the installation instructions for the project?'
@@ -36,7 +30,7 @@ const questions = () => {
             type: 'list',
             name: 'license',
             message: 'Choose a license for the project',
-            choices: ['Apache License 2.0', 'GNU General Public License v3.0', 'MIT License', 'BSD 2-Clause "Simplified" License', 'BSD 3-Clause "New" or "Revised" License', 'Boost Software License 1.0', 'Creative Commons Zero v1.0 Universal', 'Eclipse Public License 2.0', 'GNU Affero General Public License v3.0', 'GNU General Public License v2.1', 'GNU Lesser General Public License v2.1', 'Mozilla Public License 2.0', 'The Unilicense']
+            choices: ['Apache_2.0', 'GPLv3', 'MIT', 'BSD_2--Clause', 'BSD_3--Clause', 'Boost_1.0', 'EPL_1.0', 'GPL_v2', 'LGPL_v3', 'MPL_2.0', 'Unilicense']
         },
         {
             type: 'input',
@@ -75,8 +69,4 @@ const questions = () => {
 
 questions();
 
-// TODO: Create a function to initialize app
-function init() {}
 
-// Function call to initialize app
-init();
