@@ -20,7 +20,7 @@ const questions = () => {
             type: 'checkbox',
             name: 'tableOfContents',
             message: 'Which sections are included in this project\'s README?',
-            choices: ['Description', 'Installation', 'Usage', 'License', 'Contributing', 'Tests', 'Questions']
+            choices: ['installation', 'usage', 'license', 'contributing', 'tests', 'questions']
         },
         {
             type: 'input', 

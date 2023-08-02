@@ -2,7 +2,7 @@
 const buildTableOfContents = contents => contents
     .map(string => 
       `
-        * [${string}](#-${string})
+[${string}](#${string})
       `)
     .join('')
 
