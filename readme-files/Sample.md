@@ -1,8 +1,8 @@
 
-# Test Project Title
+# Sample
 ![Github licence](https://img.shields.io/badge/license-MIT-blue.svg)
 
-Test Project Description
+Sample readme file description for turn in purposes
 
 ## Table of Contents
 
@@ -16,11 +16,11 @@ Test Project Description
 
 ## Installation
 
-Test installation instructions
+Sample installation instructions
 
 ## Usage
 
-Test usage
+Sample usage information
 
 ## License
 
@@ -28,17 +28,17 @@ This project is licensed under MIT
 
 ## Contributing
 
-Test guidelines
+Sample contribution guidelines
 
 ## Tests
 
-Test instructions
+Sample test instructions
 
 ## Questions
 
 Reach me with additional questions:
 
-  * GitHub Username: nstark@github.com
-  * Email Address: nstark@gmail.com
+  * GitHub Username: nstark12
+  * Email Address: nicolestark1103@gmail.com
 
   
