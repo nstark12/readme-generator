@@ -17,3 +17,8 @@ This application is used by answering questions through inquirer in the user's c
 ## License
 
 This application is unlicensed.
+
+## Contact Information
+
+Email: nicolestark1103@gmail.com
+GitHub: nstark12
